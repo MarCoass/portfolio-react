@@ -6,7 +6,7 @@ export default function Estudios() {
     <div className="flex justify-center">
       <div className="w-1/2">
         <Typography
-          variant="h4"
+          variant="h3"
           className="text-rose-700 dark:text-rose-500 my-5"
         >
           Estudios
@@ -23,7 +23,7 @@ export default function Estudios() {
       </div>
       <div className="w-1/2">
         <Typography
-          variant="h4"
+          variant="h3"
           className="text-rose-700 dark:text-rose-500 my-5"
         >
           Experiencia
