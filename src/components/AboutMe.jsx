@@ -4,7 +4,9 @@ import { ButtonGroup, Button, Typography } from "@material-tailwind/react";
 export default function AboutMe() {
   return (
     <div className="flex justify-center flex-col">
-      <Typography variant="h2" className="text-rose-700 dark:text-rose-500">¡Hola, soy Martina!</Typography>
+      <Typography variant="h2" className="text-rose-700 dark:text-rose-500">
+        ¡Hola, soy Martina!
+      </Typography>
       <div className="flex justify-between ">
         <div className="">
           <Typography variant="h6" className="text-rose-600 dark:text-rose-400">
@@ -20,11 +22,24 @@ export default function AboutMe() {
           <div>
             <ButtonGroup>
               <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
-                Linkedin
+                <a
+                  href="https://www.linkedin.com/in/martina-coassin-142942197/"
+                  target="__blank"
+                >
+                  Linkedin
+                </a>
               </Button>
-              <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">GitHub</Button>
-              <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">Correo</Button>
-              <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">CV</Button>
+              <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
+                <a href="https://github.com/MarCoass" target="__blank">
+                  GitHub
+                </a>
+              </Button>
+              <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
+                Correo
+              </Button>
+              <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
+                CV
+              </Button>
             </ButtonGroup>
           </div>
         </div>
