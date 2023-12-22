@@ -13,3 +13,11 @@
 .dark {
   @apply bg-pink-900;
 }
+
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* Cambia el color de fondo según tus necesidades */
+  z-index: 1000; /* Ajusta el z-index según sea necesario */
+  /* Otros estilos como altura, relleno, bordes, etc. */
+}
