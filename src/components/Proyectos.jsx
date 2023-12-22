@@ -22,11 +22,22 @@ export default function Proyectos() {
           ></ProyectoGrande>
         </div>
         <div className="flex flex-wrap gap-5 justify-between">
-          <Proyecto titulo="Indecisos" tipo="Proyecto Personal"  tecnologias={["vuejs", "bootstrap"]}></Proyecto>
-          <Proyecto titulo="Portfolio" tipo="Proyecto Personal"  tecnologias={["react", "tailwindcss"]}>
-            {" "}
+          <Proyecto
+            titulo="Indecisos"
+            tipo="Proyecto Personal"
+            tecnologias={["vuejs", "bootstrap"]}
+          ></Proyecto>
+          <Proyecto
+            titulo="Portfolio"
+            tipo="Proyecto Personal"
+            tecnologias={["react", "tailwindcss"]}
+          >
           </Proyecto>
-          <Proyecto titulo="Otro Proyecto" tipo="Freelance"  tecnologias={["vuejs", "bootstrap"]}></Proyecto>
+          <Proyecto
+            titulo="Otro Proyecto"
+            tipo="Freelance"
+            tecnologias={["vuejs", "bootstrap"]}
+          ></Proyecto>
         </div>
       </div>
     </div>

@@ -19,9 +19,9 @@ export default function Tecnologias() {
   return (
     <div>
       <Typography variant="h4">Tecnologias</Typography>
-      <div className=" flex flex-wrap gap-5">
+      <div className=" flex flex-wrap gap-5 ">
         {tecnologias.map((tec, index) => (
-          <div key={index} className="flex items-center gap-4 ">
+          <div key={index} className="flex items-center gap-4 border rounded p-2">
             {tec.svg !== "" && (
               <img
                 src={`/assets/tecnologias/${tec.svg}`}
