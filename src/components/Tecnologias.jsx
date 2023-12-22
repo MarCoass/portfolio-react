@@ -21,7 +21,10 @@ export default function Tecnologias() {
       <Typography variant="h4">Tecnologias</Typography>
       <div className=" flex flex-wrap gap-5 ">
         {tecnologias.map((tec, index) => (
-          <div key={index} className="flex items-center gap-4 border rounded p-2">
+          <div
+            key={index}
+            className="flex items-center gap-4 border rounded p-2"
+          >
             {tec.svg !== "" && (
               <img
                 src={`/assets/tecnologias/${tec.svg}`}
@@ -31,7 +34,7 @@ export default function Tecnologias() {
             )}
             <div>
               <Typography variant="h6">{tec.nombre}</Typography>
-              <Typography variant="small"  className="font-normal">
+              <Typography variant="small" className="font-normal">
                 Desde: {tec.desde}
               </Typography>
             </div>
@@ -48,15 +51,14 @@ export function TecnologiasUsadas({ array }) {
   );
 
   return (
-    <div className="flex gap-3 flex-wrap">
+    <div className="flex gap-3 flex-wrap ">
       {tecnologiasFiltradas.map((tec, index) => (
         <Chip
-          variant="ghost"
-          className="w-min"
-          key={index}
-          size="sm"
-          value={tec.nombre}
-        />
+              size="sm"
+              variant="ghosted"
+              value={tec.nombre}
+              className="my-auto w-min h-min bg-rose-400 text-neutral-800 dark:text-neutral-900 dark:bg-rose-600 "
+            />
       ))}
     </div>
   );
