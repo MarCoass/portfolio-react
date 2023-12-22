@@ -7,7 +7,7 @@ import {
   Typography,
   Chip,
 } from "@material-tailwind/react";
-
+import { TecnologiasUsadas } from "./Tecnologias";
 
 export default function Proyecto({
   titulo,
@@ -29,7 +29,10 @@ export default function Proyecto({
           <Chip size="sm" variant="outlined" value={tipo} className="w-min" />
           <Typography>{descripcion}</Typography>
         </CardBody>
-        <CardFooter className="pt-0">tecnologias</CardFooter>
+        <CardFooter className="pt-0">
+          {" "}
+          <TecnologiasUsadas array={tecnologias}></TecnologiasUsadas>
+        </CardFooter>
       </Card>
     </div>
   );
@@ -40,7 +43,7 @@ export function ProyectoGrande({
   tecnologias,
   descripcion,
   imagen,
-  tipo
+  tipo,
 }) {
   return (
     <div className="">
@@ -59,11 +62,7 @@ export function ProyectoGrande({
           <Typography>{descripcion}</Typography>
         </CardBody>
         <CardFooter className="pt-0">
-        {Children.map(tecnologias, child =>
-        <div className="Row">
-          {child}
-        </div>
-      )}
+          <TecnologiasUsadas array={tecnologias}></TecnologiasUsadas>
         </CardFooter>
       </Card>
     </div>

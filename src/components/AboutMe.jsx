@@ -27,7 +27,7 @@ export default function AboutMe() {
         <img
           alt="foto de perfil"
           className="h-60 w-60 rounded-full object-cover object-center"
-          src="https://i.pinimg.com/564x/a0/a2/5f/a0a25f748f48c3e3463c4f499520ffdb.jpg"
+          src="https://avatars.githubusercontent.com/u/76189888?v=4"
         />
       </div>
     </div>

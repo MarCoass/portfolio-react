@@ -1,0 +1,12 @@
+[
+    {"nombre": "tailwindcss", "svg": "tailwindcss.svg"},
+    {"nombre": "nextjs", "svg": "nextjs.svg"},
+    {"nombre": "laravel", "svg": "laravel.svg"},
+    {"nombre": "react", "svg": "react.svg"},
+    {"nombre": "bootstrap", "svg": "bootstrap.svg"},
+    {"nombre": "github", "svg": "github.svg"},
+    {"nombre": "html", "svg": "html.svg"},
+    {"nombre": "javascript", "svg": "javascript.svg"},
+    {"nombre": "css", "svg": "css.svg"},
+    {"nombre": "sql", "svg": "sql.svg"}
+]
