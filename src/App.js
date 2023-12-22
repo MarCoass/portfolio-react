@@ -20,14 +20,18 @@ function App() {
       <div className="max-w-7xl mx-auto">
         <Nav darkMode={darkMode} toggleDarkMode={toggleDarkMode}></Nav>
         <div>
-          <Section>
+          <Section id="about">
             <AboutMe></AboutMe>
           </Section>
-          <Section>
+          <Section id="estudios">
             <Estudios></Estudios>
           </Section>
-          <Section><Proyectos></Proyectos></Section>
-          <Section><Tecnologias></Tecnologias></Section>
+          <Section id="proyectos">
+            <Proyectos></Proyectos>
+          </Section>
+          <Section  id="tecnologias">
+            <Tecnologias></Tecnologias>
+          </Section>
         </div>
       </div>
     </div>

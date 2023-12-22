@@ -6,11 +6,12 @@ import {
   MenuItem,
   IconButton,
 } from "@material-tailwind/react";
-
 import { Switch } from "@material-tailwind/react";
+import { Link } from "react-scroll";
 
 export default function Nav(props) {
   const [openNav, setOpenNav] = useState(false);
+
   useEffect(() => {
     window.addEventListener(
       "resize",
@@ -21,26 +22,49 @@ export default function Nav(props) {
   const navList = (
     <ul className="lg:flex gap-5">
       <MenuItem className="min-w-max">
-        <a href="#" className="">
+        <Link
+          to="about" // Este 'to' debe coincidir con el 'id' de la sección a la que quieres desplazar
+          spy={true}
+          smooth={true}
+          offset={-70} // Puedes ajustar el desplazamiento aquí si es necesario
+          duration={500}
+        >
           Sobre mi
-        </a>
+        </Link>
       </MenuItem>
-      <MenuItem cclassName="min-w-max">
-        <a href="#" className="">
+      <MenuItem className="min-w-max">
+        <Link
+          to="estudios"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           Estudios
-        </a>
+        </Link>
       </MenuItem>
       <MenuItem className="min-w-max">
-        <a href="#" className="">
+        <Link
+          to="proyectos"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           Proyectos
-        </a>
+        </Link>
       </MenuItem>
       <MenuItem className="min-w-max">
-        <a href="#" className="">
+        <Link
+          to="tecnologias"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
           Tecnologias
-        </a>
+        </Link>
       </MenuItem>
-
       {/*  Toggle del tema */}
       <div className="flex">
         <Switch onClick={props.toggleDarkMode} />
@@ -69,36 +93,7 @@ export default function Nav(props) {
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >
-              {openNav ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  className="h-6 w-6"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
-              )}
+              {/* Resto de tu código de iconos */}
             </IconButton>
           </div>
         </div>
