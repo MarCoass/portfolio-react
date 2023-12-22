@@ -3,21 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --clr-bg-dark: #1f2937; /* gray-800 */
-  --clr-bg-light: #fafafa; /* zinc-50 */
 
-  --clr-text-dark: #1f2937; /* gray-200 */
-  --clr-text-light: #fafafa; /* zinc-50 */
 }
 
 .dark {
-  @apply bg-pink-900;
+  @apply bg-neutral-900;
 }
+
 
 .sticky-navbar {
   position: sticky;
   top: 0;
-  background-color: #fff; /* Cambia el color de fondo según tus necesidades */
   z-index: 1000; /* Ajusta el z-index según sea necesario */
   /* Otros estilos como altura, relleno, bordes, etc. */
 }

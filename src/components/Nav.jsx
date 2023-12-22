@@ -20,51 +20,12 @@ export default function Nav(props) {
   }, []);
 
   const navList = (
-    <ul className="lg:flex gap-5">
-      <MenuItem className="min-w-max">
-        <Link
-          to="about" // Este 'to' debe coincidir con el 'id' de la sección a la que quieres desplazar
-          spy={true}
-          smooth={true}
-          offset={-70} // Puedes ajustar el desplazamiento aquí si es necesario
-          duration={500}
-        >
-          Sobre mi
-        </Link>
-      </MenuItem>
-      <MenuItem className="min-w-max">
-        <Link
-          to="estudios"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          Estudios
-        </Link>
-      </MenuItem>
-      <MenuItem className="min-w-max">
-        <Link
-          to="proyectos"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          Proyectos
-        </Link>
-      </MenuItem>
-      <MenuItem className="min-w-max">
-        <Link
-          to="tecnologias"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-        >
-          Tecnologias
-        </Link>
-      </MenuItem>
+    <ul className="lg:flex gap-5 text-rose-800 dark:text-rose-500 font-bold text-md">
+     <NavItem to='about' texto='sobre mi'></NavItem>
+     <NavItem to='estudios' texto='estudios'></NavItem>
+     <NavItem to='proyectos' texto='proyectos'></NavItem>
+     <NavItem to='tecnologias' texto='tecnologias'></NavItem>
+     
       {/*  Toggle del tema */}
       <div className="flex">
         <Switch onClick={props.toggleDarkMode} />
@@ -73,9 +34,12 @@ export default function Nav(props) {
   );
 
   return (
-    <nav className="sticky-navbar  dark:bg-gray-600 dark:text-white font-bold">
-      <Navbar className=" h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
-        <div className="flex items-center justify-between text-blue-gray-900">
+    <nav className="sticky-navbar rounded-2xl bg-rose-50 border border-1.5 border-rose-400 dark:border-rose-600 dark:bg-rose-950  dark:text-white">
+      <Navbar
+        color="transparent"
+        className=" h-max max-w-full rounded-2xl px-4 py-2 lg:px-8 lg:py-4"
+      >
+        <div className="flex items-center justify-between text-rose-700 dark:text-rose-50">
           <Typography
             as="a"
             href="#"
@@ -100,5 +64,21 @@ export default function Nav(props) {
         <MobileNav open={openNav}>{navList}</MobileNav>
       </Navbar>
     </nav>
+  );
+}
+
+export function NavItem({to, texto}) {
+  return (
+    <MenuItem className="min-w-max uppercase dark:hover:text-white dark:focus:text-white hover:bg-rose-300 active:bg-rose-500 focus:bg-rose-400">
+      <Link
+        to={to} // Este 'to' debe coincidir con el 'id' de la sección a la que quieres desplazar
+        spy={true}
+        smooth={true}
+        offset={-70} // Puedes ajustar el desplazamiento aquí si es necesario
+        duration={500}
+      >
+        {texto}
+      </Link>
+    </MenuItem>
   );
 }
