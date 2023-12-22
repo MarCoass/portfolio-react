@@ -3,6 +3,9 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Section from "./components/Section";
 import AboutMe from "./components/AboutMe";
+import Estudios from "./components/Estudios";
+import Proyectos from "./components/Proyectos";
+import Tecnologias from "./components/Tecnologias";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -17,12 +20,14 @@ function App() {
       <div className="max-w-7xl mx-auto">
         <Nav darkMode={darkMode} toggleDarkMode={toggleDarkMode}></Nav>
         <div>
-          <Section titulo="Sobre mi">
-          <AboutMe></AboutMe>
+          <Section>
+            <AboutMe></AboutMe>
           </Section>
-          <Section titulo="Estudios y experiencia"> </Section>
-          <Section titulo="Proyectos"></Section>
-          <Section titulo="Tecnologias"></Section>
+          <Section>
+            <Estudios></Estudios>
+          </Section>
+          <Section><Proyectos></Proyectos></Section>
+          <Section><Tecnologias></Tecnologias></Section>
         </div>
       </div>
     </div>
