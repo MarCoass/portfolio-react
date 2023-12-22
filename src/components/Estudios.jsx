@@ -5,7 +5,7 @@ export default function Estudios() {
   return (
     <div className="flex justify-center">
       <div className="w-1/2">
-        <Typography variant="h4">Estudios</Typography>
+        <Typography variant="h4" className="text-rose-700 dark:text-rose-500">Estudios</Typography>
         <div>
           <p>Tecnicatura Universitaria en Desarrollo Web</p>
           <p>2021 - 2023</p>
@@ -13,7 +13,7 @@ export default function Estudios() {
         </div>
       </div>
       <div className="w-1/2">
-        <Typography variant="h4">Experiencia</Typography>
+        <Typography variant="h4" className="text-rose-700 dark:text-rose-500">Experiencia</Typography>
         <div>
           <p>Beca de Capacitación Pre-Profesionales Universitarias PPU</p>
           <p>2022 - 2023</p>
