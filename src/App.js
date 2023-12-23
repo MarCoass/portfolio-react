@@ -6,6 +6,7 @@ import AboutMe from "./components/AboutMe";
 import Estudios from "./components/Estudios";
 import Proyectos from "./components/Proyectos";
 import Tecnologias from "./components/Tecnologias";
+import Footer from "./components/footer";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -14,7 +15,7 @@ function App() {
   }
   return (
     <div
-      className={`h-full w-full mx-auto py-2 
+      className={`h-full w-full mx-auto  
                     ${darkMode ? "dark" : ""}`}
     >
       <div className="max-w-7xl mx-auto">
@@ -29,9 +30,11 @@ function App() {
           <Section id="proyectos">
             <Proyectos></Proyectos>
           </Section>
-          <Section  id="tecnologias">
+          <Section id="tecnologias">
             <Tecnologias></Tecnologias>
           </Section>
+
+          <Footer></Footer>
         </div>
       </div>
     </div>
