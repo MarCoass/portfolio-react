@@ -18,23 +18,23 @@ const tecnologias = [
 export default function Tecnologias() {
   return (
     <div>
-      <Typography variant="h3" className="text-rose-700 dark:text-rose-500">
-        Tecnologias
+      <Typography variant="h3" className="text-rose-700 dark:text-rose-500 pb-5">
+        Tecnologías
       </Typography>
-      <div className=" flex flex-wrap gap-2 md:gap-5 ">
+      <div className="flex flex-wrap gap-2 sm:gap-5 justify-center">
         {tecnologias.map((tec, index) => (
           <div
             key={index}
-            className=" flex items-center gap-4 border border-rose-500 text-rose-500 dark:text-rose-600 dark:border-rose-600 dark:bg-rose-200 rounded p-2"
+            className="flex items-center gap-4 border border-rose-500 text-rose-500 dark:text-rose-600 dark:border-rose-600 dark:bg-rose-200 rounded p-2"
           >
             {tec.svg !== "" && (
               <img
-               src={`${process.env.PUBLIC_URL}/assets/tecnologias/${tec.svg}`}
+                src={`${process.env.PUBLIC_URL}/assets/tecnologias/${tec.svg}`}
                 alt={tec.nombre}
                 className="w-12"
               />
             )}
-            <div>
+            <div className="hidden sm:block">
               <Typography variant="h6" className="uppercase">
                 {tec.nombre}
               </Typography>

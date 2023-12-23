@@ -28,7 +28,7 @@ export default function Nav(props) {
      <NavItem to='tecnologias' texto='tecnologias'></NavItem>
      
       {/*  Toggle del tema */}
-      <div className="flex">
+      <div className="flex ml-3">
         <Switch onClick={props.toggleDarkMode} />
       </div>
     </ul>

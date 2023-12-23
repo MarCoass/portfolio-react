@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 import {
   Card,
   CardHeader,
@@ -17,13 +17,13 @@ export default function Proyecto({
   tipo,
   tamaño,
 }) {
-  const cardWidth = tamaño === "grande" ? "w-96" : "w-64";
-  const cardHeaderHeight = tamaño === "grande" ? "h-56" : "";
+  const cardWidth = tamaño === "grande" ? "md:w-96" : "md:w-64";
+  const cardHeaderHeight = tamaño === "grande" ? "md:h-56" : "";
 
   return (
     <div className="my-3">
       <Card
-        className={`mt-6 ${cardWidth} bg-rose-100 dark:bg-rose-950 shadow-lg shadow-rose-500 dark:shadow-rose-800 border border-rose-400`}
+        className={`mt-6 w-full ${cardWidth} bg-rose-100 dark:bg-rose-950 shadow-lg shadow-rose-500 dark:shadow-rose-800 border border-rose-400`}
       >
         <CardHeader
           className={`relative border border-rose-400 ${cardHeaderHeight}`}
