@@ -29,9 +29,9 @@ export default function Tecnologias() {
           >
             {tec.svg !== "" && (
               <img
-                src={`assets/tecnologias/${tec.svg}`}
+               src={`${process.env.PUBLIC_URL}/assets/tecnologias/${tec.svg}`}
                 alt={tec.nombre}
-                className="w-12 "
+                className="w-12"
               />
             )}
             <div>
