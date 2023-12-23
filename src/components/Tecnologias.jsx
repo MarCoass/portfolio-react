@@ -18,7 +18,9 @@ const tecnologias = [
 export default function Tecnologias() {
   return (
     <div>
-      <Typography variant="h3" className="text-rose-700 dark:text-rose-500">Tecnologias</Typography>
+      <Typography variant="h3" className="text-rose-700 dark:text-rose-500">
+        Tecnologias
+      </Typography>
       <div className=" flex flex-wrap gap-5 ">
         {tecnologias.map((tec, index) => (
           <div
@@ -27,14 +29,19 @@ export default function Tecnologias() {
           >
             {tec.svg !== "" && (
               <img
-                src={`/assets/tecnologias/${tec.svg}`}
+                src={`assets/tecnologias/${tec.svg}`}
                 alt={tec.nombre}
                 className="w-12 "
               />
             )}
             <div>
-              <Typography variant="h6" className="uppercase">{tec.nombre}</Typography>
-              <Typography variant="small" className="font-normal text-rose-950 ">
+              <Typography variant="h6" className="uppercase">
+                {tec.nombre}
+              </Typography>
+              <Typography
+                variant="small"
+                className="font-normal text-rose-950 "
+              >
                 Desde: {tec.desde}
               </Typography>
             </div>
@@ -54,11 +61,12 @@ export function TecnologiasUsadas({ array }) {
     <div className="flex gap-3 flex-wrap ">
       {tecnologiasFiltradas.map((tec, index) => (
         <Chip
-              size="sm"
-              variant="ghosted"
-              value={tec.nombre}
-              className="my-auto w-min h-min bg-rose-400 text-neutral-800 dark:text-neutral-900 dark:bg-rose-600 "
-            />
+          key={tec.nombre}
+          size="sm"
+          variant="ghost"
+          value={tec.nombre}
+          className="my-auto w-min h-min bg-rose-400 text-neutral-800 dark:text-neutral-900 dark:bg-rose-600 "
+        />
       ))}
     </div>
   );

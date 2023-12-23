@@ -8,6 +8,7 @@ import {
 } from "@material-tailwind/react";
 import { Switch } from "@material-tailwind/react";
 import { Link } from "react-scroll";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Nav(props) {
   const [openNav, setOpenNav] = useState(false);
@@ -53,11 +54,22 @@ export default function Nav(props) {
 
             <IconButton
               variant="text"
-              className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className=" ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >
-              {/* Resto de tu código de iconos */}
+              <IconButton
+          variant="text"
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          ripple={false}
+          onClick={() => setOpenNav(!openNav)}
+        >
+          {openNav ? (
+            <XMarkIcon className="h-6 w-6" strokeWidth={2} />
+          ) : (
+            <Bars3Icon className="h-6 w-6" strokeWidth={2} />
+          )}
+        </IconButton>
             </IconButton>
           </div>
         </div>

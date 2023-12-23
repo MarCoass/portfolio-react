@@ -46,7 +46,11 @@ export default function Proyecto({
             />
           </div>
 
-          <Typography className="text-black dark:text-rose-50">{descripcion}</Typography>
+          {descripcion && (
+            <Typography className="text-black dark:text-rose-50">
+              {descripcion}
+            </Typography>
+          )}
         </CardBody>
         <CardFooter className="pt-0">
           <TecnologiasUsadas array={tecnologias}></TecnologiasUsadas>
