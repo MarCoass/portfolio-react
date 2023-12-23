@@ -21,7 +21,7 @@ export default function Tecnologias() {
       <Typography variant="h3" className="text-rose-700 dark:text-rose-500">
         Tecnologias
       </Typography>
-      <div className=" flex flex-wrap gap-5 ">
+      <div className=" flex flex-wrap gap-2 md:gap-5 ">
         {tecnologias.map((tec, index) => (
           <div
             key={index}
