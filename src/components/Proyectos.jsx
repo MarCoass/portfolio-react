@@ -16,6 +16,7 @@ export default function Proyectos() {
             titulo="Mar Nails"
             descripcion="Tienda virtual y gestion de emprendimiento, tiene funcionalidades para controlar stock, precios de insumos, agenda de pedidos, tareas y otras funcionalidad utiles para una manicurista que realiza Press On Nails."
             tecnologias={["laravel", "nextjs", "postgresql", "tailwindcss"]}
+            imagen='marnails.png'
           ></Proyecto>
           <Proyecto
             tamaño="grande"
@@ -30,11 +31,13 @@ export default function Proyectos() {
             titulo="Indecisos"
             tipo="Proyecto Personal"
             tecnologias={["vuejs", "bootstrap"]}
+            imagen="indecisos.png"
           ></Proyecto>
           <Proyecto
             titulo="Portfolio"
             tipo="Proyecto Personal"
             tecnologias={["react", "tailwindcss"]}
+            imagen="portfolio.png"
           ></Proyecto>
           <Proyecto
             titulo="Otro Proyecto"

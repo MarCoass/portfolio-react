@@ -18,7 +18,7 @@ export default function Proyecto({
   tamaño,
 }) {
   const cardWidth = tamaño === "grande" ? "md:w-96" : "md:w-64";
-  const cardHeaderHeight = tamaño === "grande" ? "md:h-56" : "";
+  const cardHeaderHeight = tamaño === "grande" ? "md:h-44" : "";
 
   return (
     <div className="my-3">
@@ -28,7 +28,14 @@ export default function Proyecto({
         <CardHeader
           className={`relative border border-rose-400 ${cardHeaderHeight}`}
         >
-          <img src="https://placehold.co/600x400/EEE/31343C" alt={titulo} />
+          {imagen == null ? (
+            <img
+              src="https://placehold.co/600x400/EEE/31343C"
+              alt={titulo}
+            ></img>
+          ) : (
+            <img src={`${process.env.PUBLIC_URL}/assets/trabajos/${imagen}`} alt={titulo}/>
+          )}
         </CardHeader>
         <CardBody className="dark:text-rose-100">
           <div className="mb-3 flex flex-wrap align-middle justify-center">
