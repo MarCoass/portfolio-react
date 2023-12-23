@@ -9,7 +9,7 @@ export default function Proyectos() {
         Proyectos
       </Typography>
       <div className="flex flex-col gap-10">
-        <div className="flex flex-wrap gap-5 justify-around">
+        <div className="flex flex-wrap md:gap-3 lg:gap-5 justify-around">
           <Proyecto
             tamaño="grande"
             tipo="Trabajo Práctico"
