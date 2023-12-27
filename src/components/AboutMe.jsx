@@ -13,7 +13,7 @@ export default function AboutMe() {
             Tecnica Universitaria en Desarrollo Web
           </Typography>
           <p className="md:mr-36 my-5">
-            Soy una desarrolladora web de de Argentina. Buscando aprender nuevas
+            Soy una desarrolladora web de Argentina. Buscando aprender nuevas
             tecnologias y lenguajes. Disfruto tanto del desafío del backend como
             de la creatividad del frontend. Estoy en la búsqueda de mi primer
             empleo como desarrolladora, ansiosa por sumergirme en proyectos que
@@ -59,7 +59,7 @@ export default function AboutMe() {
               <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
                 Correo
               </Button>
-              <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
+              <Button  className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
                 CV
               </Button>
             </div>
