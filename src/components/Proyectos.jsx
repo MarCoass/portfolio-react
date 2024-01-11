@@ -24,26 +24,25 @@ export default function Proyectos() {
             titulo="NeuPoom"
             descripcion="Administracion de competencias de Poomsae, permite el registro de participantes, creacion de competencias y un pulsador para que los jueces puedan puntuar las competencias."
             tecnologias={["laravel", "bootstrap"]}
+            imagen="neupoom.png"
           ></Proyecto>
         </div>
-        <div className="flex flex-wrap gap-5 justify-between">
+        <div className="flex flex-wrap gap-5 justify-around">
           <Proyecto
             titulo="Indecisos"
             tipo="Proyecto Personal"
             tecnologias={["vuejs", "bootstrap"]}
             imagen="indecisos.png"
+            tamaño='grande'
           ></Proyecto>
           <Proyecto
             titulo="Portfolio"
             tipo="Proyecto Personal"
             tecnologias={["react", "tailwindcss"]}
             imagen="portfolio.png"
+            tamaño='grande'
           ></Proyecto>
-          <Proyecto
-            titulo="Otro Proyecto"
-            tipo="Freelance"
-            tecnologias={["vuejs", "bootstrap"]}
-          ></Proyecto>
+        
         </div>
       </div>
     </div>
