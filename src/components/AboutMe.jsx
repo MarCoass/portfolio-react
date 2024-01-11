@@ -34,12 +34,12 @@ export default function AboutMe() {
                   GitHub
                 </a>
               </Button>
-              <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
+             {/*  <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
                 Correo
               </Button>
               <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
                 CV
-              </Button>
+              </Button> */}
             </ButtonGroup>
 
             <div className=" md:hidden grid grid-cols-2 gap-4">
@@ -56,12 +56,12 @@ export default function AboutMe() {
                   GitHub
                 </a>
               </Button>
-              <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
+            {/*   <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
                 Correo
               </Button>
               <Button  className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
                 CV
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
