@@ -12,6 +12,14 @@ export default function Proyectos() {
         <div className="flex flex-wrap md:gap-3 lg:gap-5 justify-around">
           <Proyecto
             tamaño="grande"
+            tipo="Freelance - En proceso"
+            titulo="Buenos Aires Confort"
+            descripcion="Sitio web para un emprendimiento inmobiliario, con seccion para administrar las propiedad y comentarios."
+            tecnologias={["laravel", "react", "sql", "tailwindcss"]}
+            imagen='bsas.jpeg'
+          ></Proyecto>
+          <Proyecto
+            tamaño="grande"
             tipo="Trabajo Práctico"
             titulo="Mar Nails"
             descripcion="Tienda virtual y gestion de emprendimiento, tiene funcionalidades para controlar stock, precios de insumos, agenda de pedidos, tareas y otras funcionalidad utiles para una manicurista que realiza Press On Nails."
