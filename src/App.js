@@ -27,11 +27,11 @@ function App() {
           <Section id="estudios">
             <Estudios></Estudios>
           </Section>
-          <Section id="proyectos">
-            <Proyectos></Proyectos>
-          </Section>
           <Section id="tecnologias">
             <Tecnologias></Tecnologias>
+          </Section>
+          <Section id="proyectos">
+            <Proyectos></Proyectos>
           </Section>
 
           <Footer></Footer>

@@ -2,6 +2,8 @@ import React from "react";
 import { Typography, Chip } from "@material-tailwind/react";
 
 const tecnologias = [
+  { nombre: "angular", svg: "angular.svg", desde: "2024" },
+  { nombre: "firebase", svg: "firebase.svg", desde: "2024" },
   { nombre: "tailwindcss", svg: "tailwindcss.svg", desde: "2023" },
   { nombre: "nextjs", svg: "nextjs.svg", desde: "2023" },
   { nombre: "laravel", svg: "laravel.svg", desde: "2023" },

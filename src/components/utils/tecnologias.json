@@ -1,4 +1,6 @@
 [
+    {"nombre": "angular", "svg": "angular.svg"},
+    {"nombre": "firebase", "svg": "firebase.svg"},
     {"nombre": "tailwindcss", "svg": "tailwindcss.svg"},
     {"nombre": "nextjs", "svg": "nextjs.svg"},
     {"nombre": "laravel", "svg": "laravel.svg"},

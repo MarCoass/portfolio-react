@@ -13,11 +13,9 @@ export default function AboutMe() {
             Tecnica Universitaria en Desarrollo Web
           </Typography>
           <p className="md:mr-36 my-5">
-            Soy una desarrolladora web de Argentina. Buscando aprender nuevas
-            tecnologias y lenguajes. Disfruto tanto del desafío del backend como
-            de la creatividad del frontend. Estoy en la búsqueda de mi primer
-            empleo como desarrolladora, ansiosa por sumergirme en proyectos que
-            me permitan crecer y seguir aprendiendo.
+            Desarrolladora web con experiencia en frontend y backend, especializada en Angular y Firebase. Disfruto del desarrollo tanto del lado lógico como del creativo. Me caracterizo por la curiosidad, la autonomía y las ganas constantes de seguir aprendiendo y creciendo en proyectos desafiantes.
+
+
           </p>
           <div>
             <ButtonGroup className="hidden md:block">
@@ -34,7 +32,7 @@ export default function AboutMe() {
                   GitHub
                 </a>
               </Button>
-             {/*  <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
+              {/*  <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
                 Correo
               </Button>
               <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
@@ -43,7 +41,7 @@ export default function AboutMe() {
             </ButtonGroup>
 
             <div className=" md:hidden grid grid-cols-2 gap-4">
-            <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
+              <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
                 <a
                   href="https://www.linkedin.com/in/martina-coassin-142942197/"
                   target="__blank"
@@ -56,7 +54,7 @@ export default function AboutMe() {
                   GitHub
                 </a>
               </Button>
-            {/*   <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
+              {/*   <Button className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
                 Correo
               </Button>
               <Button  className="bg-rose-500 hover:bg-rose-600 active:bg-rose-700 dark:bg-rose-400 dark:hover:bg-rose-300 dark:active:bg-rose-500 dark:text-rose-950">
